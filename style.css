@@ -1,0 +1,286 @@
+/* 
+* * * * * *  common styles * * * * * * * 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+p{
+    color: #a3a3a3;
+}
+
+a{
+    text-decoration: none;
+}
+
+.red{
+    color: #ea1e22;
+}
+
+.d-flex{
+    display: flex;
+}
+.align-c{
+    align-items: center;
+}
+.justify-c{
+    justify-content: center;
+}
+a:focus , a:hover{
+outline: none;
+text-decoration: none;
+}
+
+p{
+    font-size: 1rem;
+}
+
+h2{
+    font-size:2.5rem;
+}
+
+.greenColor{
+    color:#24b46a;
+}
+/* 
+* * * * end of common styles  * * * * * 
+*/
+
+.top-bar{
+    position: fixed;
+    background: #fff;
+    width: 300px;
+}
+
+.top-bar img{
+    max-width: 300px;
+}
+
+/* container styles */
+.container{
+    width: 100%;
+    height: auto;
+}
+
+/* mobile flex */
+.mobile-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 2%;
+}
+
+.search-box{
+    position: relative;
+}
+
+.search-box input{
+    padding: 12px 18px;
+    border-radius: 30px;
+    border: none;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+    width: 300px;
+    margin-bottom: 5%;
+}
+
+.merged-select-box{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    padding: 7px 10px;
+    background: #cceddc;
+    color: #24b46a;
+    border: none;
+    border-radius: 20px;
+}
+
+.top-bar img{
+    width: 300px;
+    position: fixed;
+    top: 1%;
+}
+
+/* filters */
+.filters{
+    justify-content: space-around;
+}
+.filters select{
+    padding: 5px 10px;
+    background: #ffffff;
+    margin-right: 5px;
+    border-radius: 30px;
+    color: #a3a3a3;
+    border: 2px solid #a3a3a3;
+    /* box-shadow: 2px 2px 2px #dddd; */
+}
+
+.hidden{
+    display: none;
+}
+
+.card{
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 2%;
+    width: 300px;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-front{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-hidden-content{
+    width: 300px;
+}
+.actions img{
+    width: 40px;
+    height: 40px;
+}
+
+.card > div{
+    margin: 0 5px;
+}
+
+.card-content{
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+}
+.sub-head{
+    display: flex;
+    justify-self: center;
+}
+.sub-head p{
+margin-top: 0;
+    margin-bottom: 0;
+}
+.card-head h3{
+    margin-right: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card-btm{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.card-btm img{
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
+.card-btm p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-btm .item{
+    margin-right: 6px;
+}
+.card-btm p{
+    margin-right:2px;
+}
+.card-face img{
+    width: 60px;
+    height: 60px;
+}
+
+.footer-bar{
+    position: fixed;
+    bottom: 1%;
+    width: 350px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+.footer-bar img{
+    width: 40px;
+    height: 40px;
+}
+
+.bush-images{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.white-space{
+    height: 200px;
+}
+
+.bush-images img{
+    width: 70px;
+    height: 100px;
+}
+
+.green, .yellow, .orange{
+    padding: 2px 5px;
+}
+.green{
+    background: #cceddc;
+    color: #24b46a;
+    border-radius: 30px;
+}
+
+.yellow{
+    background-color: #edebcc;
+    color: #a79a00;
+    border-radius: 30px;
+}
+
+.orange{
+    background-color: #ffe4cd;
+    color: #ff7703;
+    border-radius: 30px;
+}
+
+.details p{
+margin-right:3px;
+}
+
+.actions .item{
+    margin: 0 2px;
+}
+
+@media only screen and (max-width: 360px) {
+ 
+    .search-box input, .footer-bar{
+        width: 250px;
+    }
+
+    .card, .card-content, .card-hidden-content{
+        width: 270px;
+    }
+
+    .card{
+        margin-top: 3%;
+    }
+
+    .card-head h3{
+        font-size: 1rem;
+    }
+  }
